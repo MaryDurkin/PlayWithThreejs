@@ -16,13 +16,13 @@
 			renderer.setSize( window.innerWidth, window.innerHeight );
 			document.body.appendChild( renderer.domElement );
 
-			var geometry = new THREE.BoxGeometry( 5, 5, 5, 5, 5, 5 );
+			var geometry = new THREE.BoxGeometry( 10, 10, 10, 5, 5, 5 );
 			var material = new THREE.MeshBasicMaterial( { color: 0xfffff, wireframe: true } );
 			var cube = new THREE.Mesh( geometry, material );
 			scene.add( cube );
 
 			// Set up the sphere vars
-			var RADIUS = 4;
+			var RADIUS = 8;
 			var SEGMENTS = 15;
 			var RINGS = 9;
 
@@ -48,8 +48,8 @@
 
 			// Move the Sphere back in Z so we
 			// can see it.
-			sphere.position.x = -5;
-			cube.position.x = 5;
+			sphere.position.x = -10;
+			cube.position.x = 10;
 
 			// Finally, add the sphere to the scene.
 			scene.add(sphere);
